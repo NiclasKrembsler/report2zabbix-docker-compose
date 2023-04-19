@@ -5,9 +5,9 @@ services:
     container_name: monitoring
     environment: 
       HOST: ${HOST}
-      BEAM_URL: "http://192.168.0.199:8082"
-      PROXY_ID: "zabbix.niclas-dev.broker.dev.ccp-it.dktk.dkfz.de"
-      ZABBIX_API_URL: "http://192.168.0.60/zabbix/api_jsonrpc.php"
-      ZABBIX_SERVER_URL: "192.168.0.60"
-      KEY: "1234"
+      BEAM_URL: ${BEAM_URL}
+      PROXY_ID: ${PROXY_ID}
+      ZABBIX_SERVER_URL: ${ZABBIX_SERVER_URL}
+      ZABBIX_API_URL: ${ZABBIX_API_URL}
+      KEY: ${KEY}
     
